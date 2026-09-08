@@ -3,60 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiny Countdown — Privacy Policy</title>
+    <title>Countdown — Privacy Policy</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Tiny Countdown</h1>
+            <h1>Countdown: Warranty &amp; Expiry</h1>
             <p class="subtitle">Privacy Policy</p>
         </header>
 
         <main>
             <div class="meta">
                 <p><strong>Effective Date:</strong> June 23, 2026</p>
-                <p><strong>Last Updated:</strong> June 23, 2026</p>
+                <p><strong>Last Updated:</strong> September 8, 2026</p>
+                <p>Previously published as <em>Tiny Countdown</em>. Same app, same developer, same policy.</p>
             </div>
 
             <section>
-                <h2>Introduction</h2>
-                <p>Tiny Countdown is designed to help you count down to upcoming events and dates. This app is designed to work without accounts, tracking, analytics, advertising, or developer-side storage of user-created content.</p>
+                <h2>Summary</h2>
+                <p>Countdown keeps track of dates that matter — warranties, documents, insurance renewals, vehicle service, subscriptions, trips and events. It has no accounts, no sign-in, no analytics, no advertising and no server of its own.</p>
+                <p>The app makes <strong>no network requests at all</strong>, with a single exception: when you buy the one-time unlock or restore a previous purchase, it talks to Apple's App Store. Nothing else you enter ever leaves your device.</p>
             </section>
 
             <section>
                 <h2>Information We Do Not Collect</h2>
-                <p>This app does not collect personal information from users. Specifically, the developer does not collect:</p>
+                <p>The developer does not collect personal information from users. Specifically, none of the following is collected:</p>
                 <ul>
                     <li>Name, email address, phone number, or physical address</li>
                     <li>Contact list or address book data</li>
-                    <li>Photos or media from your device, unless you explicitly choose a photo for an optional in-app feature</li>
-                    <li>Precise or approximate location data, unless explicitly required by a feature you choose to use</li>
+                    <li>Photo library access (see <em>Photos</em> below — the app never requests this permission)</li>
+                    <li>Precise or approximate location data</li>
                     <li>Financial account information or payment card information</li>
                     <li>Advertising identifiers or device identifiers used for tracking</li>
-                    <li>Analytics or behavioral data</li>
-                    <li>User-created content stored on developer servers</li>
+                    <li>Analytics, crash telemetry, or behavioural data</li>
+                    <li>Any user-created content on developer servers — there are no developer servers</li>
                 </ul>
             </section>
 
             <section>
                 <h2>Information Stored Locally on Your Device</h2>
-                <p>Tiny Countdown may store the following data locally on your device: countdown titles and target dates you enter, reminders, widget preferences and display settings, and general app settings. None of this data is transmitted to the developer or any external server.</p>
+                <p>The app stores the following on your device only:</p>
+                <ul>
+                    <li>The items you create — titles, dates, categories, notes, colours and icons</li>
+                    <li>Reminder settings for each item</li>
+                    <li>Archived items you have chosen to keep</li>
+                    <li>Photos you attach to an item (see below)</li>
+                    <li>App preferences and display settings</li>
+                </ul>
+                <p>None of this is transmitted to the developer or to any external server.</p>
             </section>
 
             <section>
-                <h2>App Permissions</h2>
-                <p>This app is designed to work without requesting access to sensitive device permissions. If a permission is requested for an optional feature, it is used solely for that feature and is not used for tracking, profiling, or any purpose beyond what is needed to deliver the feature you choose to use.</p>
+                <h2>Photos</h2>
+                <p>You can attach a photo of a receipt or a document to an item. This is handled by the system photo picker, which runs outside the app in a separate process supplied by Apple. Because of this, <strong>the app is never granted access to your photo library and never asks for that permission.</strong> It receives only the single image you pick.</p>
+                <p>The image you choose is copied into the app's own private storage on your device. It is marked as excluded from iCloud backup. It is deleted when you remove the photo, delete the item, use "Delete all data", or delete the app. It is never uploaded anywhere.</p>
+            </section>
+
+            <section>
+                <h2>Notifications</h2>
+                <p>Reminders are scheduled locally by iOS on your device. There is no push notification server. The contents of a reminder — including the item's title — never leave your device. Permission is requested only when you set up your first reminder, and the app works without it.</p>
+            </section>
+
+            <section>
+                <h2>Widgets</h2>
+                <p>Home Screen and Lock Screen widgets read your items through a private shared container on your device (an Apple "App Group") that belongs to this app alone. This container is local storage; it is not a network service and nothing in it is transmitted anywhere.</p>
+            </section>
+
+            <section>
+                <h2>Export</h2>
+                <p>You can export your items as a CSV file. The file is created on your device when you ask for it. It leaves your device only if you choose to send or save it somewhere yourself, using the standard iOS share sheet.</p>
             </section>
 
             <section>
                 <h2>Payments and Purchases</h2>
-                <p>Purchases, if available within this app, are processed by Apple through the App Store using StoreKit. The developer does not receive, process, or store your payment card information. All payment handling is managed entirely by Apple.</p>
+                <p>The app offers a single one-time purchase that unlocks additional features. It is processed by Apple through the App Store using StoreKit. The developer does not receive, process, or store your payment card information. All payment handling is managed entirely by Apple. There is no subscription.</p>
             </section>
 
             <section>
                 <h2>Third-Party Services</h2>
-                <p>This app does not integrate third-party analytics services, advertising networks, or tracking SDKs. If the app uses Apple platform features such as local notifications or in-app purchases through StoreKit, these are device-level or App Store platform features provided by Apple and are not used for tracking or profiling users.</p>
+                <p>The app integrates no third-party analytics services, advertising networks, tracking SDKs, or software libraries of any kind. The only Apple platform features it uses are local notifications, WidgetKit, and StoreKit for in-app purchase. These are device-level or App Store platform features and are not used for tracking or profiling.</p>
             </section>
 
             <section>
@@ -66,22 +92,23 @@
 
             <section>
                 <h2>Data Deletion</h2>
-                <p>You can delete your data at any time by removing individual entries inside the app where this option is available, resetting app data through app settings where available, or deleting the app from your device. Deleting the app removes all locally stored data associated with it.</p>
+                <p>You can delete your data at any time by deleting individual items in the app, by using "Delete all data" in Settings, or by deleting the app from your device. Deleting the app removes all locally stored data associated with it, including any attached photos.</p>
             </section>
 
             <section>
                 <h2>Children's Privacy</h2>
-                <p>This app does not knowingly collect personal information from children or from any users, as it does not collect personal information in general. The app is designed to function without any personal data being transmitted to the developer.</p>
+                <p>The app does not knowingly collect personal information from children, or from any users, because it does not collect personal information at all. It is designed to function without any personal data being transmitted to the developer.</p>
             </section>
 
             <section>
                 <h2>Changes to This Privacy Policy</h2>
-                <p>This privacy policy may be updated if the app's features change in a way that affects how information is handled. When updated, the revised policy will be posted on this page with a new effective date. We encourage you to review this policy periodically.</p>
+                <p>This policy may be updated if the app's features change in a way that affects how information is handled. When updated, the revised policy is posted on this page with a new date above.</p>
             </section>
 
             <section>
                 <h2>Contact</h2>
-                <p>For privacy-related inquiries regarding this application, please use the contact methods provided through the App Store listing.</p>
+                <p>For privacy questions about this app, email <a href="mailto:murathanoran1@gmail.com">murathanoran1@gmail.com</a>.</p>
+                <p>For help using the app, see the <a href="tiny-countdown-support.html">support page</a>.</p>
             </section>
         </main>
 
