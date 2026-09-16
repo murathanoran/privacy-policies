@@ -9,6 +9,7 @@
 <body>
     <div class="container">
         <header>
+            <a href="../index.html" class="back-link">← Privacy Policies</a>
             <h1>Memory Jar</h1>
             <p class="subtitle">Privacy Policy</p>
         </header>
@@ -16,77 +17,103 @@
         <main>
             <div class="meta">
                 <p><strong>Effective Date:</strong> July 27, 2026</p>
-                <p><strong>Last Updated:</strong> July 27, 2026</p>
+                <p><strong>Last Updated:</strong> September 16, 2026</p>
             </div>
 
             <section>
                 <h2>Introduction</h2>
-                <p>Memory Jar is designed to help you collect memories into digital jars, seal them until a reveal date you choose, and rediscover them later. This app is designed to work without accounts, tracking, analytics, advertising, or developer-side storage of user-created content.</p>
+                <p>Memory Jar helps you collect memories into digital jars, seal them until a date you choose, and read them back on that date. It works without accounts, tracking, analytics, advertising, or any developer-side storage of what you write.</p>
+                <p>This policy was updated for version 2.0, which added voice memories, encrypted backups, shared jars and gift jars. Those sections are new; nothing about how the app handles your data has become less strict.</p>
             </section>
 
             <section>
                 <h2>Information We Do Not Collect</h2>
-                <p>This app does not collect personal information from users. Specifically, the developer does not collect:</p>
+                <p>This app does not collect personal information. Specifically, the developer does not collect:</p>
                 <ul>
                     <li>Name, email address, phone number, or physical address</li>
                     <li>Contact list or address book data</li>
-                    <li>Photos or media from your device, unless you explicitly choose a photo for an optional in-app feature</li>
-                    <li>Precise or approximate location data, unless explicitly required by a feature you choose to use</li>
+                    <li>Photos, audio, or other media from your device</li>
+                    <li>Precise or approximate location data</li>
                     <li>Financial account information or payment card information</li>
                     <li>Advertising identifiers or device identifiers used for tracking</li>
-                    <li>Analytics or behavioral data</li>
-                    <li>User-created content stored on developer servers</li>
+                    <li>Analytics, crash reports, or behavioural data</li>
+                    <li>Any of the memories, jars, photos or recordings you create</li>
                 </ul>
+                <p>There is no server belonging to this app. The app makes no network requests at all except to Apple, when you make or restore a purchase.</p>
             </section>
 
             <section>
                 <h2>Information Stored Locally on Your Device</h2>
-                <p>Memory Jar may store the following data locally on your device: jars you create, memory entries you write (text, an optional emoji, and an optional photo for Premium users), reveal dates, jar themes, and general app settings. None of this data is transmitted to the developer or any external server.</p>
+                <p>Memory Jar stores the following on your device and nowhere else: the jars you create, the memories you write, any photo or voice recording you attach to a memory, the prompt a memory was written against, opening dates, reminder settings, jar styles, and a name you may optionally enter for use in shared jars. None of it is transmitted to the developer.</p>
+                <p>If you enter a name in Settings or when sharing a jar, it is stored on your device and is only ever written into a file that you personally choose to send to someone. It is optional and can be left blank.</p>
             </section>
 
             <section>
                 <h2>App Permissions</h2>
-                <p>This app is designed to work without requesting access to sensitive device permissions. If a permission is requested for an optional feature, it is used solely for that feature and is not used for tracking, profiling, or any purpose beyond what is needed to deliver the feature you choose to use.</p>
+                <p>Memory Jar requests two permissions. Both are optional, and both are asked for at the moment they are needed rather than during onboarding.</p>
+                <p><strong>Notifications.</strong> Used to tell you a jar is ready to open and to send occasional reminders to add a memory. Notification text never contains anything from inside a jar. Declining this does not restrict any other feature.</p>
+                <p><strong>Microphone.</strong> Requested only if you choose to record a voice memory, and only when you tap Record. Audio is recorded on the device, stored on the device, and sealed into the jar. It is never transcribed, never analysed, and never uploaded. No speech recognition of any kind runs over it. Declining this leaves written memories and photos fully available.</p>
+                <p>Photos you attach are chosen by you through the system photo picker, which gives the app only the image you selected. The app has no access to your photo library beyond that.</p>
+            </section>
+
+            <section>
+                <h2>Files You Choose to Send</h2>
+                <p>Nothing leaves your device unless you create a file and send it yourself. There are four such files, and each one is created only by an explicit action you take:</p>
+                <ul>
+                    <li><strong>Export</strong> — a PDF or plain text copy of a jar you have already opened.</li>
+                    <li><strong>Invite</strong> — an invitation asking someone to add memories to a jar you own. It carries the jar's name, cover and opening date, and never the memories already inside it.</li>
+                    <li><strong>Contribution</strong> — the memories you added to someone else's jar, sent back to them.</li>
+                    <li><strong>Gift</strong> — a whole jar you filled for someone else, handed over sealed.</li>
+                </ul>
+                <p>Invite, contribution and gift files are encrypted with AES-GCM and cannot be read by any app other than Memory Jar. That is not the same as being safe from a determined attacker who has both the file and the app, so send them through a channel you trust. Exports are deliberately not encrypted, because the point of an export is that you can open and keep it.</p>
+                <p>Once you hand a file to the share sheet, where it goes is governed by whichever app or service you send it through, not by Memory Jar.</p>
+            </section>
+
+            <section>
+                <h2>Backups</h2>
+                <p>Memory Jar can create a single encrypted backup file containing every jar on the device, including photos and voice memories. It is sealed with a passphrase you choose, stretched using PBKDF2-HMAC-SHA256 and used to encrypt the contents with AES-GCM.</p>
+                <p>That passphrase is never stored anywhere, never transmitted, and is not recoverable. Nobody can open the backup without it, including the developer. If you lose the passphrase, the backup cannot be opened by anyone. The backup file is yours; the app does not upload it and does not know where you put it.</p>
             </section>
 
             <section>
                 <h2>Payments and Purchases</h2>
-                <p>Purchases, if available within this app, are processed by Apple through the App Store using StoreKit. The developer does not receive, process, or store your payment card information. All payment handling is managed entirely by Apple.</p>
+                <p>Memory Jar Premium is a one-time purchase processed by Apple through the App Store using StoreKit. The developer does not receive, process, or store payment card information. Whether you have purchased is determined by asking Apple directly; it is not stored as a flag the app could be tricked into setting.</p>
             </section>
 
             <section>
                 <h2>Third-Party Services</h2>
-                <p>This app does not integrate third-party analytics services, advertising networks, or tracking SDKs. If the app uses Apple platform features such as local notifications or in-app purchases through StoreKit, these are device-level or App Store platform features provided by Apple and are not used for tracking or profiling users.</p>
+                <p>This app contains no third-party analytics, advertising networks, attribution services, or tracking SDKs of any kind. The only external services it uses are Apple's own platform features: local notifications, widgets, the share sheet, the photo picker, and StoreKit for purchases. None of them are used for tracking or profiling.</p>
             </section>
 
             <section>
                 <h2>Data Sharing</h2>
-                <p>The developer does not sell, trade, rent, or share user data with third parties. There is no developer-side database of user-created content. Your information stays on your device.</p>
+                <p>The developer does not sell, trade, rent, or share user data with third parties. There is no developer-side database of user-created content, because there is no developer-side database.</p>
             </section>
 
             <section>
                 <h2>Data Deletion</h2>
-                <p>You can delete your data at any time by removing individual entries inside the app where this option is available, resetting app data through app settings where available, or deleting the app from your device. Deleting the app removes all locally stored data associated with it.</p>
+                <p>You can delete a single sealed memory from inside its jar, delete an entire jar from its own screen, or use Delete All Data in Settings to remove every jar and memory from the device, including photos and recordings. Deleting the app removes all of its data from your device.</p>
+                <p>Because nothing is stored anywhere else, none of this is recoverable afterwards. If you want to keep a copy, make a backup or an export first.</p>
             </section>
 
             <section>
                 <h2>Children's Privacy</h2>
-                <p>This app does not knowingly collect personal information from children or from any users, as it does not collect personal information in general. The app is designed to function without any personal data being transmitted to the developer.</p>
+                <p>This app does not knowingly collect personal information from children, or from anyone, as it does not collect personal information at all. It is designed to function without any personal data being transmitted to the developer.</p>
             </section>
 
             <section>
                 <h2>Changes to This Privacy Policy</h2>
-                <p>This privacy policy may be updated if the app's features change in a way that affects how information is handled. When updated, the revised policy will be posted on this page with a new effective date. We encourage you to review this policy periodically.</p>
+                <p>This policy is updated whenever the app's features change in a way that affects how information is handled. The revised policy is posted on this page with a new date. The version 2.0 update added the Microphone, Files You Choose to Send, and Backups sections.</p>
             </section>
 
             <section>
                 <h2>Contact</h2>
-                <p>For privacy-related inquiries regarding this application, please use the contact methods provided through the App Store listing.</p>
-                <p>For direct support or questions about this app, contact the developer at murathanoran1@gmail.com.</p>
+                <p>Email <a href="mailto:murathanoran1@gmail.com">murathanoran1@gmail.com</a> with any privacy question about this app. Support pages and common questions are <a href="memory-jar-support.html">here</a>.</p>
             </section>
         </main>
 
         <footer>
+            <p><a href="../index.html">← Back to Privacy Policies</a></p>
             <p>Developer: Murathan Öran</p>
         </footer>
     </div>
