@@ -15,73 +15,79 @@
 
         <main>
             <div class="meta">
-                <p><strong>Effective Date:</strong> June 23, 2026</p>
-                <p><strong>Last Updated:</strong> June 23, 2026</p>
+                <p><strong>Effective Date:</strong> September 24, 2026</p>
+                <p><strong>Last Updated:</strong> September 24, 2026</p>
+                <p>Applies to Left. 2.0 and later.</p>
             </div>
 
             <section>
                 <h2>Introduction</h2>
-                <p>Left. is designed to help you manage simple daily or periodic budgets using an envelope-style approach. This app is designed to work without accounts, tracking, analytics, advertising, or developer-side storage of user-created content.</p>
+                <p>Left. shows you one number: what you can still spend today. Working that out needs your money and your spending, and none of it leaves your iPhone. There is no server for it to go to, no account to sign in to, and nothing that watches what you do.</p>
             </section>
 
             <section>
-                <h2>Information We Do Not Collect</h2>
-                <p>This app does not collect personal information from users. Specifically, the developer does not collect:</p>
+                <h2>What Left. Stores</h2>
+                <p>Your budgets and their dates, everything you log as spent, money you add during a budget, the categories you use, and — if you set up a paycheck plan — your pay, your bills and your savings amounts. Alongside that: your settings, your quick-add buttons, your favourites, and which budget is open.</p>
+                <p>All of it is written to your device's own storage, which iOS encrypts. The app and its widget share one private container on the device so the Lock Screen can show the same number the app does; nothing in that container is reachable by any other app.</p>
+            </section>
+
+            <section>
+                <h2>What Leaves Your Device</h2>
+                <p><strong>Nothing, except a file you export yourself.</strong> Left. makes no network requests at all: no analytics, no crash reporting, no advertising, no account system, and no cloud sync. The app contains no third-party SDKs.</p>
+                <p>Two features write a file, and only when you ask for one:</p>
                 <ul>
-                    <li>Name, email address, phone number, or physical address</li>
-                    <li>Contact list or address book data</li>
-                    <li>Photos or media from your device, unless you explicitly choose a photo for an optional in-app feature</li>
-                    <li>Precise or approximate location data, unless explicitly required by a feature you choose to use</li>
-                    <li>Financial account information or payment card information</li>
-                    <li>Advertising identifiers or device identifiers used for tracking</li>
-                    <li>Analytics or behavioral data</li>
-                    <li>User-created content stored on developer servers</li>
+                    <li><strong>Backups.</strong> Left. can write an encrypted backup of your data. The file is sealed with a passphrase you choose, using AES-GCM with a key stretched from that passphrase. Nobody — including the developer — can open it without the passphrase, and it cannot be recovered if you forget it. You choose where the file goes with the system's own file picker. If you choose a cloud location such as iCloud Drive, the encrypted file is stored there under your own account, by your choice.</li>
+                    <li><strong>CSV export and the share card.</strong> You can export a budget's expenses as a plain CSV, and share a card showing how a budget went. Both go wherever you send them using the system share sheet. The share card never contains your income.</li>
                 </ul>
             </section>
 
             <section>
-                <h2>Information Stored Locally on Your Device</h2>
-                <p>Left. may store the following data locally on your device: budget envelope names, daily or periodic budget amounts, spending entries, categories, dates, display preferences, and general app settings. None of this data is transmitted to the developer or any external server.</p>
+                <h2>Purchases</h2>
+                <p>Left. Premium is a single purchase, handled entirely by Apple through the App Store. The developer never sees or stores your payment details. Apple tells the app only whether a purchase exists. There is no subscription.</p>
             </section>
 
             <section>
-                <h2>App Permissions</h2>
-                <p>Left. does not connect to banks, financial institutions, or payment processors. The app does not access your bank account information, credit card data, debit card data, or any financial account credentials. All budget information is entered manually by you within the app. No sensitive financial permission is requested.</p>
+                <h2>Permissions</h2>
+                <ul>
+                    <li><strong>Face ID, Touch ID or passcode</strong>, only if you turn on Left.'s lock. The check is performed by iOS; Left. is told only whether it succeeded, and never receives your biometric data.</li>
+                    <li><strong>Notifications</strong>, only if you allow them. Reminders are scheduled on your device by iOS and contain only your own figures. No notification is sent from a server, because there is no server.</li>
+                </ul>
+                <p>Left. does not ask for, and cannot access, your contacts, photos, location, microphone, camera, calendar or health data. It does not connect to banks or payment processors, and never asks for account credentials or card numbers — every figure in the app is one you typed yourself.</p>
             </section>
 
             <section>
-                <h2>Payments and Purchases</h2>
-                <p>Purchases, if available within this app, are processed by Apple through the App Store using StoreKit. The developer does not receive, process, or store your payment card information. All payment handling is managed entirely by Apple.</p>
+                <h2>Siri, Shortcuts and Widgets</h2>
+                <p>Left. offers Siri phrases, Shortcuts actions, and Home Screen and Lock Screen widgets. These run on your device through Apple's own frameworks. What Siri does with the words you speak is governed by Apple's privacy policy and your own Siri settings; Left. receives only the resulting request and answers it from the data already on your device. With the lock turned on, Left. will not read out or change anything until the app has been unlocked.</p>
             </section>
 
             <section>
-                <h2>Third-Party Services</h2>
-                <p>This app does not integrate third-party analytics services, advertising networks, or tracking SDKs. If the app uses Apple platform features such as local notifications or in-app purchases through StoreKit, these are device-level or App Store platform features provided by Apple and are not used for tracking or profiling users.</p>
+                <h2>Analytics, Tracking and Advertising</h2>
+                <p>There are none. Left. collects no usage data, uses no advertising or device identifiers, and is not used to track you across apps or websites.</p>
             </section>
 
             <section>
                 <h2>Data Sharing</h2>
-                <p>The developer does not sell, trade, rent, or share user data with third parties. There is no developer-side database of user-created content. Your information stays on your device.</p>
+                <p>The developer does not sell, trade, rent or share your data, because the developer never receives it. There is no developer-side database of anything you create in Left.</p>
             </section>
 
             <section>
                 <h2>Data Deletion</h2>
-                <p>You can delete your data at any time by removing individual entries inside the app where this option is available, resetting app data through app settings where available, or deleting the app from your device. Deleting the app removes all locally stored data associated with it.</p>
+                <p>You can delete individual expenses and budgets inside the app, erase everything from Settings, or delete the app. Deleting the app removes all of its local data, including the container it shares with its widget. Any backup file you exported yourself stays where you put it until you delete it.</p>
             </section>
 
             <section>
                 <h2>Children's Privacy</h2>
-                <p>This app does not knowingly collect personal information from children or from any users, as it does not collect personal information in general. The app is designed to function without any personal data being transmitted to the developer.</p>
+                <p>Left. collects no personal information from anyone, children included, and transmits nothing to the developer.</p>
             </section>
 
             <section>
                 <h2>Changes to This Privacy Policy</h2>
-                <p>This privacy policy may be updated if the app's features change in a way that affects how information is handled. When updated, the revised policy will be posted on this page with a new effective date. We encourage you to review this policy periodically.</p>
+                <p>If a future version of Left. changes how information is handled, this page is updated with a new date before that version ships.</p>
             </section>
 
             <section>
                 <h2>Contact</h2>
-                <p>For privacy-related inquiries regarding this application, please use the contact methods provided through the App Store listing.</p>
+                <p>For anything about privacy in this app, write to <a href="mailto:murathanoran1@gmail.com">murathanoran1@gmail.com</a>.</p>
             </section>
         </main>
 
