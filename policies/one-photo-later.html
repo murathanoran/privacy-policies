@@ -15,73 +15,94 @@
 
         <main>
             <div class="meta">
-                <p><strong>Effective Date:</strong> June 23, 2026</p>
-                <p><strong>Last Updated:</strong> June 23, 2026</p>
+                <p><strong>Effective Date:</strong> September 29, 2026</p>
+                <p><strong>Last Updated:</strong> September 29, 2026 (version 2.0)</p>
             </div>
 
             <section>
                 <h2>Introduction</h2>
-                <p>One Photo Later is designed to help you set reminders to take a photo at a future time or place. This app is designed to work without accounts, tracking, analytics, advertising, or developer-side storage of user-created content.</p>
+                <p>One Photo Later lets you photograph things you want to come back to — something to buy, read, watch, try, visit or do — and reminds you about them later. The app works without accounts, tracking, analytics, advertising or any developer-side storage. Everything you create stays on your iPhone.</p>
             </section>
 
             <section>
                 <h2>Information We Do Not Collect</h2>
-                <p>This app does not collect personal information from users. Specifically, the developer does not collect:</p>
+                <p>The developer does not collect any information from you. Specifically, the developer does not receive:</p>
                 <ul>
-                    <li>Name, email address, phone number, or physical address</li>
-                    <li>Contact list or address book data</li>
-                    <li>Photos or media from your device, unless you explicitly choose a photo for an optional in-app feature</li>
-                    <li>Precise or approximate location data, unless explicitly required by a feature you choose to use</li>
-                    <li>Financial account information or payment card information</li>
-                    <li>Advertising identifiers or device identifiers used for tracking</li>
-                    <li>Analytics or behavioral data</li>
-                    <li>User-created content stored on developer servers</li>
+                    <li>Your photos, notes, titles, reminders or any other content you create</li>
+                    <li>Name, email address, phone number or physical address</li>
+                    <li>Contacts, location, health or financial data</li>
+                    <li>Advertising identifiers or any device identifier used for tracking</li>
+                    <li>Analytics, crash analytics or usage data</li>
                 </ul>
+                <p>The app makes no network requests of its own. The only connection it uses is Apple's App Store (StoreKit) when you view, buy or restore the optional purchase.</p>
             </section>
 
             <section>
-                <h2>Information Stored Locally on Your Device</h2>
-                <p>One Photo Later may store the following data locally on your device: photo-related reminders, optional captions or notes you enter, timestamps, and general app settings. If you choose a photo for use within the app, that photo remains on your device and is not uploaded, scanned, analyzed, or transmitted to the developer or any external server.</p>
+                <h2>Information Stored on Your Device</h2>
+                <p>The app stores the following only on your iPhone, inside the app's private storage:</p>
+                <ul>
+                    <li>The photos you save, re-encoded at up to 2560 pixels</li>
+                    <li>Titles, notes, what each photo is for, the reminder time you choose, lists, and whether an item is finished</li>
+                    <li>Text recognised in your photos (see below), so you can search it</li>
+                    <li>App settings, such as your reminder times</li>
+                </ul>
+                <p>Photos are stored with iOS Data Protection (encrypted while your iPhone is locked) and are excluded from iCloud and computer backups. They are therefore not synced between devices, and the developer cannot recover them if you delete the app. Titles, notes and settings may be included in your own encrypted iCloud or computer backup of your iPhone, like any app's data; the developer has no access to those backups.</p>
+                <p>To show your photos in the Home Screen widget and to receive images from the Share button, the app keeps small thumbnails, a short summary of upcoming items and images waiting to be imported in an App Group container on your iPhone that only One Photo Later and its own extensions can read. This data never leaves the device.</p>
+            </section>
+
+            <section>
+                <h2>Text Recognition</h2>
+                <p>The app uses Apple's on-device Vision framework to read text in your photos — for example a book title, a price, a link or a date — so it can suggest a title, make the photo searchable and offer one-tap actions. This happens entirely on your iPhone. No image or recognised text is sent to the developer, to Apple for this purpose, or to any other service.</p>
             </section>
 
             <section>
                 <h2>App Permissions</h2>
-                <p>One Photo Later may request access to your photo library only if you choose to select a photo for use within the app. Photo library access is used solely for the feature you choose to activate. Photos are not uploaded to developer servers and are not shared with any third party. If you do not use a photo-selection feature, the app does not access your photo library.</p>
+                <ul>
+                    <li><strong>Camera</strong> — requested only when you tap Snap, to take the photo you want to save. Photos you take in the app are not added to your photo library.</li>
+                    <li><strong>Photos</strong> — the app uses the system photo picker, which shows your library in a separate, private process and gives the app only the photos you pick. The app never asks for access to your whole library.</li>
+                    <li><strong>Notifications</strong> — requested only the first time you set a reminder time. Reminders are scheduled locally on your iPhone and include a small copy of the photo so you can recognise it. No push notification service is used.</li>
+                </ul>
+                <p>You can change any of these at any time in the iOS Settings app. The app keeps working without them.</p>
+            </section>
+
+            <section>
+                <h2>Share Extension and Widget</h2>
+                <p>When you send an image to One Photo Later with the Share button, the extension saves a copy into the app's private App Group storage on your iPhone; the app imports it the next time it opens. The widget reads only the on-device summary described above. Neither sends data anywhere.</p>
             </section>
 
             <section>
                 <h2>Payments and Purchases</h2>
-                <p>Purchases, if available within this app, are processed by Apple through the App Store using StoreKit. The developer does not receive, process, or store your payment card information. All payment handling is managed entirely by Apple.</p>
+                <p>The optional one-time Premium purchase is processed by Apple through the App Store. The developer does not receive or store your payment information. The app checks your purchase using Apple's StoreKit on your device.</p>
             </section>
 
             <section>
                 <h2>Third-Party Services</h2>
-                <p>This app does not integrate third-party analytics services, advertising networks, or tracking SDKs. If the app uses Apple platform features such as local notifications or in-app purchases through StoreKit, these are device-level or App Store platform features provided by Apple and are not used for tracking or profiling users.</p>
+                <p>The app contains no third-party code: no analytics, advertising, crash-reporting or tracking SDKs. It uses only Apple system frameworks.</p>
             </section>
 
             <section>
                 <h2>Data Sharing</h2>
-                <p>The developer does not sell, trade, rent, or share user data with third parties. There is no developer-side database of user-created content. Your information stays on your device.</p>
+                <p>The developer does not sell, trade, rent or share any data, because the developer does not have any. You can choose to share an individual photo yourself using the Share button inside the app.</p>
             </section>
 
             <section>
                 <h2>Data Deletion</h2>
-                <p>You can delete your data at any time by removing individual entries inside the app where this option is available, resetting app data through app settings where available, or deleting the app from your device. Deleting the app removes all locally stored data associated with it.</p>
+                <p>Delete a single photo from its detail screen, clear finished items from the Archive, or remove everything with <strong>Settings › Delete All Data</strong> inside the app. Deleting the app from your iPhone removes all of its data.</p>
             </section>
 
             <section>
                 <h2>Children's Privacy</h2>
-                <p>This app does not knowingly collect personal information from children or from any users, as it does not collect personal information in general. The app is designed to function without any personal data being transmitted to the developer.</p>
+                <p>The app does not collect personal information from anyone, including children.</p>
             </section>
 
             <section>
                 <h2>Changes to This Privacy Policy</h2>
-                <p>This privacy policy may be updated if the app's features change in a way that affects how information is handled. When updated, the revised policy will be posted on this page with a new effective date. We encourage you to review this policy periodically.</p>
+                <p>If a future version changes how information is handled, this page will be updated with a new effective date before that version is released.</p>
             </section>
 
             <section>
                 <h2>Contact</h2>
-                <p>For privacy-related inquiries regarding this application, please use the contact methods provided through the App Store listing.</p>
+                <p>Questions about privacy: <a href="mailto:murathanoran1@gmail.com">murathanoran1@gmail.com</a>. Help with the app: <a href="one-photo-later-support.html">Support</a>.</p>
             </section>
         </main>
 
