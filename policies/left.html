@@ -15,9 +15,9 @@
 
         <main>
             <div class="meta">
-                <p><strong>Effective Date:</strong> September 24, 2026</p>
-                <p><strong>Last Updated:</strong> September 24, 2026</p>
-                <p>Applies to Left. 2.0 and later.</p>
+                <p><strong>Effective Date:</strong> October 19, 2026</p>
+                <p><strong>Last Updated:</strong> October 19, 2026</p>
+                <p>Applies to Left. 3.0 and later.</p>
             </div>
 
             <section>
@@ -27,18 +27,24 @@
 
             <section>
                 <h2>What Left. Stores</h2>
-                <p>Your budgets and their dates, everything you log as spent, money you add during a budget, the categories you use, and — if you set up a paycheck plan — your pay, your bills and your savings amounts. Alongside that: your settings, your quick-add buttons, your favourites, and which budget is open.</p>
+                <p>Your budgets and their dates, everything you log as spent, money you add during a budget, the categories you use, and — if you set up a paycheck plan — your pay, your bills and your savings amounts. If you use them, also your savings goals and what goes into them, and the purchases you plan with "Can I afford it?". Alongside that: your settings, your quick-add buttons, your favourites, and which budget is open.</p>
                 <p>All of it is written to your device's own storage, which iOS encrypts. The app and its widget share one private container on the device so the Lock Screen can show the same number the app does; nothing in that container is reachable by any other app.</p>
             </section>
 
             <section>
                 <h2>What Leaves Your Device</h2>
-                <p><strong>Nothing, except a file you export yourself.</strong> Left. makes no network requests at all: no analytics, no crash reporting, no advertising, no account system, and no cloud sync. The app contains no third-party SDKs.</p>
+                <p><strong>Nothing, except a file you export yourself</strong> — and, if you use Left. on Apple Watch, the figures your iPhone shares with your own watch (below). Left. makes no network requests at all: no analytics, no crash reporting, no advertising, no account system, and no cloud sync. The app contains no third-party SDKs.</p>
                 <p>Two features write a file, and only when you ask for one:</p>
                 <ul>
                     <li><strong>Backups.</strong> Left. can write an encrypted backup of your data. The file is sealed with a passphrase you choose, using AES-GCM with a key stretched from that passphrase. Nobody — including the developer — can open it without the passphrase, and it cannot be recovered if you forget it. You choose where the file goes with the system's own file picker. If you choose a cloud location such as iCloud Drive, the encrypted file is stored there under your own account, by your choice.</li>
                     <li><strong>CSV export and the share card.</strong> You can export a budget's expenses as a plain CSV, and share a card showing how a budget went. Both go wherever you send them using the system share sheet. The share card never contains your income.</li>
                 </ul>
+                <p><strong>CSV import.</strong> You can import expenses from a CSV file you choose with the system's file picker. The file is read on your device; the expenses you confirm are added to your budget, and nothing else from the file is kept or sent anywhere.</p>
+            </section>
+
+            <section>
+                <h2>Apple Watch</h2>
+                <p>If you use Left. on Apple Watch, your iPhone sends your paired watch the figures it needs to show today's number — your current budget's amounts and dates and your quick-add buttons — and any amount you log on the watch is sent back to your iPhone. This happens directly between your own iPhone and your own Apple Watch through Apple's WatchConnectivity framework, over watchOS's encrypted connection; it never passes through the developer or any server operated by the developer. The watch keeps these figures in the app's own private storage, shared only with its watch-face complications.</p>
             </section>
 
             <section>
@@ -61,6 +67,11 @@
             </section>
 
             <section>
+                <h2>Ratings</h2>
+                <p>After something goes well — a budget that finished within its money, a goal reached, a week inside your daily share — Left. may ask iOS to show Apple's standard rating prompt, at most once per version. Whether it appears, and anything you choose in it, is handled by Apple; Left. is not told what you did.</p>
+            </section>
+
+            <section>
                 <h2>Analytics, Tracking and Advertising</h2>
                 <p>There are none. Left. collects no usage data, uses no advertising or device identifiers, and is not used to track you across apps or websites.</p>
             </section>
@@ -72,7 +83,7 @@
 
             <section>
                 <h2>Data Deletion</h2>
-                <p>You can delete individual expenses and budgets inside the app, erase everything from Settings, or delete the app. Deleting the app removes all of its local data, including the container it shares with its widget. Any backup file you exported yourself stays where you put it until you delete it.</p>
+                <p>You can delete individual expenses and budgets inside the app, erase everything from Settings, or delete the app. Deleting the app removes all of its local data, including the container it shares with its widget; deleting Left. from your Apple Watch removes the watch's copy of the figures. Any backup file you exported yourself stays where you put it until you delete it.</p>
             </section>
 
             <section>
