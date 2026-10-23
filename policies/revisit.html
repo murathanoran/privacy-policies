@@ -16,13 +16,13 @@
 <main>
 <div class="meta">
 <p><strong>Effective Date:</strong> June 23, 2026</p>
-<p><strong>Last Updated:</strong> September 15, 2026</p>
+<p><strong>Last Updated:</strong> October 23, 2026</p>
 </div>
 
 <section>
 <h2>Introduction</h2>
-<p>Revisit keeps a private record of places you have been and would like to go back to. That record stays on your iPhone. The developer does not collect it, cannot see it, and there is no server for it to go to.</p>
-<p>Revisit has no accounts, no analytics, no advertising and no cloud sync. It makes no network requests of its own; the only thing it communicates with is the App Store, to sell and verify the one-time in-app purchase.</p>
+<p>Revisit keeps a private record of places you have been, places you want to go, and why they are worth it. That record stays on your iPhone. The developer does not collect it, cannot see it, and there is no server for it to go to.</p>
+<p>Revisit has no accounts, no analytics, no advertising and no cloud sync. It makes no network requests of its own and looks nothing up online — no maps, no place search, no address lookup. The only thing it communicates with is the App Store, to sell and verify the one-time in-app purchase and to pass on a rating if you choose to leave one.</p>
 </section>
 
 <section>
@@ -32,7 +32,7 @@
 <li>Name, email address, phone number, or physical address</li>
 <li>Contact list or address book data</li>
 <li>Your photo library. Photos are chosen in Apple's system picker, which runs outside the app, so Revisit only ever receives the specific images you hand it</li>
-<li>Location data of any kind. Revisit never requests location access and never asks where you are</li>
+<li>Location data. If you choose to use Nearby or "I'm here now", your iPhone gives Revisit your position for that one moment; it is used on the device and never sent to the developer or anyone else (see App Permissions)</li>
 <li>Financial account information or payment card information</li>
 <li>Advertising identifiers or device identifiers used for tracking</li>
 <li>Analytics, crash reports, or behavioral data</li>
@@ -42,22 +42,32 @@
 
 <section>
 <h2>What Revisit Stores on Your Device</h2>
-<p>Revisit stores the following on your device only: place names and categories, your notes, the address or location text you type, the date of each visit, notes and ratings attached to individual visits, photos you attach to a visit, reminder settings, and app preferences such as sorting and whether the app lock is enabled. This data is written to your device's own storage, which iOS encrypts. None of it is transmitted to the developer or to any external server.</p>
+<p>Revisit stores the following on your device only: place names and categories, whether you have been to a place or want to go, your "why go back" line, your notes, the address or location text you type, a place's coordinates if it was shared from a maps app or saved with "I'm here now", the maps link it was shared with, the lists you create, the date of each visit, notes and ratings attached to individual visits, photos you attach to a visit, reminder settings, and app preferences such as sorting and whether the app lock is enabled. This data is written to your device's own storage, which iOS encrypts. None of it is transmitted to the developer or to any external server.</p>
 </section>
 
 <section>
 <h2>App Permissions</h2>
-<p>Revisit is designed around asking for as little as possible. It requests exactly two permissions, and only at the moment you ask for the feature that needs them:</p>
+<p>Revisit is designed around asking for as little as possible. It requests at most three permissions, each only at the moment you use the feature that needs it, and every part of the app that does not need a permission keeps working if you decline:</p>
 <ul>
 <li><strong>Notifications</strong> — requested only when you set your first reminder. Reminders are scheduled and delivered by your iPhone; nothing about the place is transmitted anywhere. Declining does not affect anything else in the app.</li>
+<li><strong>Location, "While Using the App" only</strong> — requested only the first time you tap Nearby or "I'm here now". Revisit reads your position once, on the device. For Nearby it sorts your saved places by distance and forgets your position when you leave that screen; for "I'm here now" it stores the coordinates with that one place, because you asked it to. Revisit never tracks your location in the background, never monitors regions, and never sends a position anywhere.</li>
 <li><strong>Face ID, Touch ID, or your device passcode</strong> — requested only if you turn on the optional app lock yourself. Authentication is performed by iOS; Revisit is told only whether it succeeded, and never receives biometric data.</li>
 </ul>
-<p>Revisit never requests access to your photo library, your location, your contacts, your calendar, the camera, or the microphone.</p>
+<p>Revisit never requests access to your photo library, your contacts, your calendar, the camera, or the microphone, and never asks for location "Always".</p>
 </section>
 
 <section>
 <h2>Widgets</h2>
 <p>If you add a Revisit widget, the app writes a small file into a shared container on your device so the widget can read it. That file contains only place names, a symbol name, and two dates. Your notes, ratings and photos are never written to it. The file never leaves your device.</p>
+</section>
+
+<section>
+<h2>Sharing from Maps, Opening in Maps, Search and Siri</h2>
+<p><strong>Share sheet.</strong> When you share a place from Apple Maps, Google Maps or another app to Revisit, the share extension reads what that app handed over — a name, an address, coordinates if present, and the link — on your device. It does not open the link or look anything up. The place waits in a small file in the app's shared container on your device until Revisit next opens, which then saves it and deletes the file.</p>
+<p><strong>Open in Maps.</strong> If you tap "Open in Maps", Revisit asks iOS to open the place in the Maps app (or the maps link you shared it with). What the Maps app does with that request is covered by its own privacy policy; Revisit itself sends nothing.</p>
+<p><strong>Google Maps import.</strong> If you import a Google Takeout file, Revisit reads it on your device. Links in the file are stored as text and are not opened.</p>
+<p><strong>Spotlight.</strong> Place names, categories and your "why go back" line are added to your iPhone's on-device search index so you can find them from the Home Screen. Notes, photos and positions are never indexed. While the app lock is on, Revisit removes everything it has indexed.</p>
+<p><strong>Siri and Shortcuts.</strong> Revisit's shortcuts run on your iPhone and read or write only the app's own data.</p>
 </section>
 
 <section>
@@ -72,7 +82,7 @@
 
 <section>
 <h2>Third-Party Services</h2>
-<p>This app does not integrate third-party analytics services, advertising networks, tracking SDKs, or any third-party code. It uses Apple platform features only — local notifications, local authentication, the system photo picker, WidgetKit and StoreKit — and none of these are used for tracking or profiling.</p>
+<p>This app does not integrate third-party analytics services, advertising networks, tracking SDKs, or any third-party code. It uses Apple platform features only — local notifications, local authentication, Core Location (on request, while in use), the system photo picker, the share sheet, on-device Spotlight indexing, App Intents, WidgetKit and StoreKit — and none of these are used for tracking or profiling.</p>
 </section>
 
 <section>
@@ -97,7 +107,7 @@
 
 <section>
 <h2>Contact</h2>
-<p>For privacy-related inquiries regarding this application, please contact <a href="mailto:murathanoran1@gmail.com">murathanoran1@gmail.com</a>.</p>
+<p>For privacy-related inquiries regarding this application, please contact <a href="mailto:murathanoran1@gmail.com">murathanoran1@gmail.com</a>. For help using the app, see the <a href="revisit-support.html">support page</a>.</p>
 </section>
 </main>
 
