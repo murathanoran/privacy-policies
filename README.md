@@ -28,7 +28,7 @@ https://<your-username>.github.io/privacy-policies/policies/<app-file>.html
 | Before You Go | `policies/before-you-go.html` |
 | Tiny Promise | `policies/tiny-promise.html` |
 | Tiny Countdown | `policies/tiny-countdown.html` |
-| One Breath | `policies/one-breath.html` |
+| One Breath | `policies/one-breath.html` (app page: `one-breath.html`) |
 | One Photo Later | `policies/one-photo-later.html` |
 | Birthday Widget | `policies/birthday-widget.html` |
 | Tiny Expiry | `policies/tiny-expiry.html` |
