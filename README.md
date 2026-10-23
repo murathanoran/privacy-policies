@@ -34,7 +34,7 @@ https://<your-username>.github.io/privacy-policies/policies/<app-file>.html
 | Tiny Expiry | `policies/tiny-expiry.html` |
 | Tiny Warranty | `policies/tiny-warranty.html` |
 | Tiny Maintenance | `policies/tiny-maintenance.html` |
-| Revisit | `policies/revisit.html` |
+| Revisit | `policies/revisit.html` · support: `policies/revisit-support.html` |
 | Again | `policies/again.html` |
 | Get Me Out | `policies/get-me-out.html` |
 | Left. | `policies/left.html` |
