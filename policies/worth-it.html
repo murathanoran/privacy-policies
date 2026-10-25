@@ -17,12 +17,11 @@
         <main>
             <div class="meta">
                 <p><strong>Effective Date:</strong> July 27, 2026</p>
-                <p><strong>Last Updated:</strong> October 8, 2026 (version 2.0)</p>
+                <p><strong>Last Updated:</strong> October 26, 2026 (version 3.0)</p>
             </div>
-
             <section>
                 <h2>The short version</h2>
-                <p>Worth It is a private record of your decisions: what you expected when you made them, and what actually happened. It has no account, no analytics, no advertising and no tracking, and it never connects to a server run by the developer. Everything you write stays on your iPhone. The developer cannot read your decisions, your verdicts or your lessons, because they are never sent anywhere.</p>
+                <p>Worth It is a private decision journal: the options you weighed, what you expected and how sure you were, and — later — what actually happened. It has no account, no analytics, no advertising, no AI and no tracking, and it never connects to a server run by the developer. <strong>Your decisions stay on your iPhone.</strong> The developer cannot read your decisions, your verdicts or your lessons, because they are never sent anywhere.</p>
                 <p>Need help instead? See the <a href="worth-it-support.html">Worth It support page</a>.</p>
             </section>
 
@@ -32,6 +31,7 @@
                 <ul>
                     <li>Name, email address, phone number or physical address</li>
                     <li>Contacts, photos, location, microphone or camera input (Worth It uses none of these)</li>
+                    <li>Face ID, Touch ID or any biometric data</li>
                     <li>Health data of any kind</li>
                     <li>Payment card or financial account information</li>
                     <li>Advertising identifiers or device identifiers used for tracking</li>
@@ -45,36 +45,48 @@
                 <p>To work, Worth It keeps the following on your device only:</p>
                 <ul>
                     <li>The decisions you record: title, category, why you made it, what you expected, dates, an optional note, an optional cost, and an optional "how sure are you" rating</li>
-                    <li>Your verdicts: what happened, whether it was worth it, whether you would do it again, your lesson and advice to your past self — including any later "still worth it?" looks</li>
-                    <li>Review and revisit dates, and your settings (reminder time, appearance, export format)</li>
+                    <li>Optional details you add when deciding: the options you weighed with their pros, cons and weights, the option you chose and why you didn't pick the others, what would tell you it was a mistake, and how you felt (mood and energy)</li>
+                    <li>Optional check-ins while a decision plays out (how it's going, how sure you are now, a short note)</li>
+                    <li>Your verdicts: what happened, whether it was worth it, whether the call itself was a good one, whether your mistake signal happened, whether you would do it again, your lesson and advice to your past self — including any later "still worth it?" looks</li>
+                    <li>Review, check-in and revisit dates, and your settings (reminder time, appearance, export format, app lock, Spotlight)</li>
                 </ul>
-                <p>The Hindsight report is calculated on your iPhone from this data each time you open it; it is not stored or sent anywhere.</p>
-                <p>If you add a Worth It widget, a small summary (your next look back, how many decisions are ready, and your written lessons) is shared with Worth It's own widgets through an App Group on your device so the widgets can show it. Lock Screen widgets are marked private, so iOS can hide their text while your iPhone is locked. None of this information is transmitted to the developer or to any third party. Your iPhone's own backups may include it, as they do for any app.</p>
+                <p>The Hindsight report — including your accuracy score and patterns — is plain arithmetic calculated on your iPhone each time you open it. No AI is used, and nothing is stored or sent anywhere. The three optional example decisions are bundled with the app and never leave it.</p>
+                <p>If you add a Worth It widget, a small summary (your next look back, how many decisions are ready, your written lessons and your accuracy score) is shared with Worth It's own widgets through an App Group on your device so the widgets can show it. Lock Screen widgets are marked private, so iOS can hide their text while your iPhone is locked, and while Worth It's own lock is on the widgets show no titles or lessons at all. None of this information is transmitted to the developer or to any third party. Your iPhone's own backups may include it, as they do for any app.</p>
+            </section>
+
+            <section>
+                <h2>App lock (optional, off by default)</h2>
+                <p>You can lock Worth It with Face ID, Touch ID or your passcode. The check is done by iOS: Worth It only learns whether it succeeded and never sees or stores your face, fingerprint or passcode. iOS asks for Face ID permission the first time you turn the lock on. While the lock is on, Worth It is hidden in the app switcher, notifications don't name your decisions, and nothing appears in Spotlight.</p>
+            </section>
+
+            <section>
+                <h2>Spotlight, Siri and Shortcuts (optional)</h2>
+                <p>Spotlight search is off by default. If you turn it on in Settings, the titles of your decisions are added to your iPhone's own on-device search index so you can find them from the Home Screen; turning it off removes them. Worth It's Siri and Shortcuts actions open the app on a new decision or tell you what's due next; the answer is created on your iPhone from the same summary the widgets use.</p>
             </section>
 
             <section>
                 <h2>Notifications (optional)</h2>
-                <p>When you record a decision, Worth It offers one reminder on the day you chose to look back, and one more if you schedule a "still worth it?" revisit. iOS asks for permission the first time. Reminders are scheduled locally on your iPhone at the time of day you choose in Settings, and the reminder text includes the decision's title. No notification is sent from a server. You can turn reminders off in Worth It's Settings at any time.</p>
+                <p>Worth It offers one reminder on the day you chose to look back, an optional check-in reminder before that, and one more if you schedule a "still worth it?" revisit. iOS asks for permission the first time. Reminders are scheduled locally on your iPhone at the time of day you choose in Settings, and the reminder text includes the decision's title unless the app lock is on. No notification is sent from a server. You can turn reminders off in Worth It's Settings at any time.</p>
             </section>
 
             <section>
-                <h2>Exporting</h2>
-                <p>You can export everything you wrote as a JSON or CSV file from Settings. The file is created on your iPhone and shared only where you choose to send it. Worth It deletes its temporary copy afterwards.</p>
+                <h2>Exporting, importing and the PDF report</h2>
+                <p>You can export everything you wrote as a JSON or CSV file, import a JSON export back (for example on a new iPhone), and create a PDF Hindsight report. All of this happens on your iPhone. Files are shared only where you choose to send them, and Worth It deletes its temporary copy afterwards. An import only reads the file you pick.</p>
             </section>
 
             <section>
-                <h2>Purchases</h2>
-                <p>Worth It Unlimited is a one-time purchase processed by Apple through the App Store. The developer never receives your payment details. The app asks the App Store whether your Apple Account owns the purchase so it can unlock it on your devices.</p>
+                <h2>Purchases and ratings</h2>
+                <p>Worth It Unlimited is a one-time purchase processed by Apple through the App Store. The developer never receives your payment details. The app asks the App Store whether your Apple Account owns the purchase so it can unlock it on your devices. Worth It may ask once whether you'd like to rate it, using Apple's standard rating prompt; Apple decides whether it appears, and the developer receives no information about you from it.</p>
             </section>
 
             <section>
                 <h2>Third parties</h2>
-                <p>Worth It contains no third-party SDKs, analytics services, advertising networks or tracking code. The developer does not sell, rent, trade or share any user data, because no user data is collected.</p>
+                <p>Worth It contains no third-party SDKs, analytics services, advertising networks, AI services or tracking code. The developer does not sell, rent, trade or share any user data, because no user data is collected.</p>
             </section>
 
             <section>
                 <h2>Deleting your data</h2>
-                <p>You can delete any decision (and everything written about it) from the Decisions list or from the decision itself, and remove later looks individually. Deleting the app removes everything it stored on your iPhone.</p>
+                <p>You can delete any decision (and everything written about it) from the Decisions list or from the decision itself, remove check-ins and later looks individually, and remove the examples with one tap. Deleting the app removes everything it stored on your iPhone.</p>
             </section>
 
             <section>
@@ -84,7 +96,7 @@
 
             <section>
                 <h2>Not financial advice</h2>
-                <p>Worth It helps you reflect on your own decisions. It does not give financial, legal or medical advice, and its Hindsight figures describe only what you recorded.</p>
+                <p>Worth It helps you reflect on your own decisions. It does not give financial, legal or medical advice, and its Hindsight figures — including the accuracy score — describe only what you recorded.</p>
             </section>
 
             <section>
