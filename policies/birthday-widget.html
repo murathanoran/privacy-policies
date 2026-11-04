@@ -16,7 +16,7 @@
         <main>
             <div class="meta">
                 <p><strong>Effective Date:</strong> June 23, 2026</p>
-                <p><strong>Last Updated:</strong> October 19, 2026 (version 3.0)</p>
+                <p><strong>Last Updated:</strong> November 2026 (version 4.0)</p>
             </div>
 
             <section>
@@ -48,7 +48,7 @@
                 <h2>App Permissions</h2>
                 <p><strong>Contacts.</strong> The app never requests access to your Contacts and cannot read your address book. You can enter birthdays by hand, or choose <em>Import from Contacts</em>. That option opens Apple's system contact picker, which runs in a separate, private process: only the people you select, with their name, birthday and, where available, a phone number and contact photo, are handed to the app and saved on your device. The rest of your address book is never visible to the app, and the app never writes to your Contacts.</p>
                 <p><strong>Photos.</strong> The app never requests permission to read your photo library. When you choose <em>Add photo</em> for a person, Apple's system photo picker opens in a separate, private process and hands the app only the one picture you select. If you import someone from Contacts and they have a contact photo, the picker may hand over that photo as well. The app keeps only a small square copy (256 × 256 pixels) of the picture, stored locally with that person, and discards the original. You can remove a photo at any time.</p>
-                <p><strong>Notifications.</strong> Reminders are local notifications scheduled on your device; they repeat every year on their own. If you turn it on, an optional Monday summary lists the week's birthdays and anniversaries, and the Reminder Check screen can send you a single test reminder. Permission is requested when you first set the app up or save a birthday, and you can change it at any time in iOS Settings.</p>
+                <p><strong>Notifications.</strong> Reminders are local notifications scheduled on your device; they repeat every year on their own. iOS lets an app keep a limited number of reminders scheduled; when your list needs more, the app schedules the nearest ones first and one local reminder asks you to open the app so the next ones can be scheduled. If you turn it on, an optional Monday summary lists the week's birthdays and anniversaries, and the Reminder Check screen can send you a single test reminder. Permission is requested when you first set the app up or save a birthday, and you can change it at any time in iOS Settings.</p>
                 <p><strong>Adding photos.</strong> If you save a birthday card from the share sheet, iOS asks once for permission to add it to your photo library. This permission only lets the app add the card; it cannot read your photos.</p>
                 <p><strong>Background refresh.</strong> The app may ask iOS to wake it briefly in the background (usually once a day) to keep reminders and widgets up to date. This happens entirely on your device and involves no network activity.</p>
                 <p>If a permission is requested for any other optional feature, it is used solely for that feature and is not used for tracking.</p>
@@ -73,6 +73,11 @@
 
                 <h2>Sending Wishes</h2>
                 <p>When you choose <em>Send wish</em>, the app opens Apple's Messages composer (or the system share sheet) with the text you picked and, if you saved one, that person's phone number filled in. You review the message and decide whether to send it. The app never sends messages itself and never transmits any data off your device.</p>
+            </section>
+
+            <section>
+                <h2>Ratings and the Developer's Other Apps</h2>
+                <p>After you send a wish or share a card, the app may show Apple's standard rating request; Apple limits how often it appears, and the app never sees whether or how you rated it. In Settings, "More from the developer" lists two other apps by the same developer. Tapping one opens Apple's App Store page for it inside the app; that page is provided by Apple under Apple's privacy policy. A campaign label that identifies this screen, not you, lets the developer see in Apple's aggregated App Store statistics how many visits came from it. The app itself makes no network requests.</p>
             </section>
 
             <section>
